@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script charset = "utf-8">
+//алгоритм «Тасование Фишера — Йетса»
+// проходить по массиву в обратном порядке и
+// менять местами каждый элемент со случайным элементом, который находится перед ним.
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+let arr = prompt('Введите элементы массива через пробел!', '').split(' ');
+
+shuffle(arr);
+alert(arr);
+
+</script>
+</body>
+</html>

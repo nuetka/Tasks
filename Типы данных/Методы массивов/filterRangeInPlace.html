@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script charset = "utf-8">
+
+function filterRangeInPlace(arr, a, b) {
+
+    for (let i = 0; i < arr.length; i++) {
+    let value = arr[i];
+
+    if (value < a || value > b) {
+        arr.splice(i, 1);
+        i--;
+    }
+    }
+
+}
+
+let arr = prompt('Введите элементы массива через пробел!', '').split(' ');
+let a = prompt('a!?','');
+let b = prompt('b!?','');
+
+filterRangeInPlace(arr, a, b); 
+alert(arr);
+
+alert( arr ); 
+
+
+
+</script>
+</body>
+</html>

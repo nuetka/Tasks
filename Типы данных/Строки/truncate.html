@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script charset = "utf-8">
+
+ function truncate(str, maxlength) {
+    if (maxlength == null || maxlength <=0) return 'Ой!';
+  return (str.length > maxlength) ?
+    str.slice(0, maxlength - 1) + '…' : str;
+}
+ 
+str = prompt('Введите строку!', '');
+
+do {
+    maxlength = prompt('Введите максимальную длину!', '');
+  } while ( !isFinite(maxlength) || maxlength === '' );
+
+
+alert(truncate(str, maxlength));
+
+</script>
+</body>
+</html>

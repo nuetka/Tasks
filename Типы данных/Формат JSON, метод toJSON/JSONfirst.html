@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script charset = "utf-8">
+
+let user = {
+  name: "Василий Иванович",
+  age: 35
+};
+
+let user2 = JSON.stringify(user);
+let user3 = JSON.parse(user2);
+
+alert(user2);
+alert(user3);
+alert(`${user3.name} ${user3.age}`);
+
+</script>
+</body>
+</html>

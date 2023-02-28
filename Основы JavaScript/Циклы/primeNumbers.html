@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+  <script charset="utf-8">
+
+let n = prompt("Введите число!", '');;
+
+Prime:
+for (let i = 2; i <= n; i++) { // Для всех i...
+
+  for (let j = 2; j <=i/2 ; j++) { // проверить, делится ли число..
+    if (i % j == 0) continue Prime; // не подходит, берём следующее
+  }
+
+  alert( i ); // простое число
+}
+
+  </script>
+</body>
+</html>
